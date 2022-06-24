@@ -1,0 +1,31 @@
+name: xml-th
+version: 0.1.0.0
+github: "opasql/xml-th"
+license: BSD3
+author: "Oleg Paskal"
+maintainer: "rtrn.0@ya.ru"
+copyright: "2022 Oleg Paskal"
+category: Web
+description: Please see the README on GitHub at <https://github.com/githubuser/xml-th#readme>
+
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  ghc-options:
+    - -Wall
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - xml-th

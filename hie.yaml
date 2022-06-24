@@ -1,0 +1,7 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:xml-th"
+
+    - path: "test"
+      component: "xml-th:test:spec"
